@@ -1,0 +1,25 @@
+@import 'var';
+
+$base_color: orange;
+
+nav {
+    ul {
+        background-color: gainsboro;
+        li {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            color: $secondary_color;
+            padding: $default_padding * 2; /*+2 sau alte operatii*/
+        }
+    }
+}
+
+button {
+    background-color: $base_color;
+}
+
+h1 {
+    color: $base_color;
+}

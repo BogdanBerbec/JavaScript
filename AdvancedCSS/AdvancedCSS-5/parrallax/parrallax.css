@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 200px;
+    height: 200px; */
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* border: 2px solid lightskyblue; */
+    perspective: 8px;
+    perspective-origin: 50%;
+}
+.back {
+    transform: translateZ(0px);
+}
+.front {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateZ(3px) scale(0.625);
+}
+.gear {
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    transform: translateZ(5px) scale(0.5);
+}
+.gear img {
+    width: 100px;
+}
+h1 {
+    font-size: 35px;
+}
+/* .container div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transform: translateZ(-600px);
+} */

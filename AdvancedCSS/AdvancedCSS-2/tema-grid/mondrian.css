@@ -1,0 +1,136 @@
+.container {
+    /* height: 631px;
+    width: 561px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .grid2 {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+.grid3 {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 630px;
+    width: 560px;
+    /* height: 100vh;
+    width: 100vw; */
+    background-color: black;
+    grid-gap: 8px;
+}
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: gainsboro;
+}
+.item2 {
+    grid-column: 3 / span 3;
+    grid-row: 1;
+    background-color: gainsboro;
+}
+.item3 {
+    grid-column: 6 / span 2;
+    grid-row: 1;
+    background-color: yellow;
+}
+.item4 {
+    grid-row: 1 / span 6;
+    grid-column: 8;
+    background-color: gainsboro;
+}
+.item5 {
+    grid-row: 2 / span 2;
+    grid-column: 1;
+    background-color: gainsboro;
+}
+.item6 {
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 4;
+    background-color: red;
+}
+.item7 {
+    grid-column: 6 / span 2;
+    grid-row: 2 / span 2;
+    background-color: yellow;
+}
+.item8 {
+    grid-row: 4 / span 3;
+    grid-column: 1;
+    background-color: gainsboro;
+}
+.item9 {
+    grid-column: 6;
+    grid-row: 4 / span 2;
+    background-color: gainsboro;
+}
+.item10 {
+    grid-column: 7;
+    grid-row: 4 / span 2;
+    background-color: gainsboro;
+}
+.item11 {
+    grid-column: 2 / span 2;
+    grid-row: 6 / span 2;
+    background-color: black;
+}
+.item12 {
+    grid-column: 4 / span 2;
+    grid-row: 6;
+    background-color: gainsboro;
+}
+.item13 {
+    grid-column: 6 / span 2;
+    grid-row: 6;
+    background-color: gainsboro;
+}
+.item14 {
+    grid-column: 1;
+    grid-row: 7 / span 3;
+    background-color: yellow;
+}
+.item15 {
+    grid-column: 4 / span 2;
+    grid-row: 7;
+    background-color: gainsboro;
+}
+.item16 {
+    grid-column: 6 / span 2;
+    grid-row: 7 / span 2;
+    background-color: blue;
+}
+.item17 {
+    grid-column: 8;
+    grid-row: 7 / span 3;
+    background-color: red;
+}
+.item18 {
+    grid-column: 2 / span 2;
+    grid-row: 8 / span 2;
+    background-color: gainsboro;
+}
+.item19 {
+    grid-column: 4 / span 2;
+    grid-row: 8;
+    background-color: black
+}
+.item20 {
+    grid-column: 4 / span 4;
+    grid-row: 9;
+    background-color: gainsboro;
+}

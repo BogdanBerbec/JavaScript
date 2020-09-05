@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: burlywood;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icecream {
+    width: 200px;
+    height: 300px;
+    /* border-radius: 45% 45% 0 0; */
+    border-radius: 90px 90px 0 0;
+    overflow: hidden;
+}
+.colors {
+    width: 350px;
+    height: 350px;
+    transform: rotate(-30deg);
+    position: relative;
+    left: -100px;
+    background: rgb(212,0,178);
+    background: linear-gradient(0deg, rgba(212,0,178,1) 0%, rgba(212,0,178,1) 25%, rgba(0,255,231,1) 25%, rgba(0,255,231,1) 50%, rgba(255,252,4,1) 50%, rgba(255,252,4,1) 75%, rgba(4,255,20,1) 75%, rgba(4,255,20,1) 100%);
+    /* background: linear-gradient(-30deg, rgba(4,255,20,1) 0%, rgba(4,255,20,1) 25%, rgba(0,255,231,1) 25%, rgba(0,255,231,1) 50%, rgba(255,252,4,1) 50%, rgba(255,252,4,1) 75%, rgba(4,255,20,1) 75%, rgba(4,255,20,1) 100%); */
+    /* background-position: center center; */
+    background-position-y: 0;
+    /* background-repeat: repeat; */
+    border-radius: 90px 90px 0 0;
+    animation-name: cream;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.stick {
+    width: 50px;
+    height: 120px;
+    background-color: brown;
+    border-radius: 0 0 30px 30px;
+}
+@keyframes cream{
+    to {
+        background-position-y: 1050px;
+    }
+}

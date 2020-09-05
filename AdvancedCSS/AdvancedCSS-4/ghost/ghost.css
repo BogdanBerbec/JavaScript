@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    --culoare_fundal: #531365;
+    --culoare_gard: #DDDCDD;
+    --culoare_fundal_jos: #320435;
+    --culoare_picior_sus: #452209;
+    --culoare_picior_mijloc: #BD2802;
+    --culoare_picior_jos_gradial1: #FE7643;
+    --culoare_picior_jos_gradial2: #D32301;
+    background-color: var(--culoare_fundal);
+    height: 100vh;
+}
+
+.fundalJos {
+    background-color: var(--culoare_fundal_jos);
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100vw;
+}
+
+.stalp1 {
+    background-color: var(--culoare_gard);
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+    height: 250px;
+    width: 70px;
+}
+
+.triunghi1 {
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+
+    border-bottom: 50px solid white;
+    position: absolute;
+    bottom: 320px;
+    left: 50px;
+}
+
+.stalp2 {
+    background-color: var(--culoare_gard);
+    position: absolute;
+    bottom: 70px;
+    left: 320px;
+    height: 250px;
+    width: 70px;
+}
+
+.triunghi2 {
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+
+    border-bottom: 50px solid white;
+    position: absolute;
+    bottom: 320px;
+    left: 320px;
+}
+
+.stalp3 {
+    background-color: var(--culoare_gard);
+    position: absolute;
+    bottom: 70px;
+    right: 200px;
+    height: 250px;
+    width: 70px;
+}
+
+.triunghi3 {
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+
+    border-bottom: 50px solid white;
+    position: absolute;
+    bottom: 320px;
+    right: 200px;
+}
+
+.bara {
+    background-color: var(--culoare_gard);
+    position: absolute;
+    bottom: 220px;
+    left: 20px;
+    height: 50px;
+    width: 95vw;
+}
+
+.ghost {
+    background-color: white;
+    position: absolute;
+    height: 480px;
+    width: 450px;
+    bottom: 170px;
+    left: 460px;
+    border-radius: 50% 50% 0 0;
+}
+
+.picior1 {
+    background: linear-gradient(180deg, rgba(69,34,9,1) 0%, rgba(69,34,9,1) 30%, rgba(189,40,2,1) 30%, rgba(189,40,2,1) 40%, rgba(254,118,67,1) 40%, rgba(211,35,1,1) 70%, rgba(254,118,67,1) 70%, rgba(211,35,1,1) 100%);
+    position: absolute;
+    width: 50px;
+    height: 85px;
+    bottom: 85px;
+    left: 580px;
+}
+
+.talpa1 {
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    width: 90px;
+    height: 50px;
+    bottom: 35px;
+    left: 560px;
+    border-radius: 30px 30px 0 0;
+}
+
+.picior2 {
+    background: linear-gradient(180deg, rgba(69,34,9,1) 0%, rgba(69,34,9,1) 30%, rgba(189,40,2,1) 30%, rgba(189,40,2,1) 40%, rgba(254,118,67,1) 40%, rgba(211,35,1,1) 70%, rgba(254,118,67,1) 70%, rgba(211,35,1,1) 100%);
+    position: absolute;
+    width: 50px;
+    height: 85px;
+    bottom: 85px;
+    left: 730px;
+}
+
+.talpa2 {
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    width: 90px;
+    height: 50px;
+    bottom: 35px;
+    left: 710px;
+    border-radius: 30px 30px 0 0;
+}
+
+.ochi_stang {
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    top: 230px;
+    left: 570px;
+    height: 60px;
+    width: 70px;
+    border-radius: 40%;
+    animation-name: close;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ochi_drept {
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    top: 230px;
+    left: 730px;
+    height: 60px;
+    width: 70px;
+    border-radius: 40%;
+    animation-name: close;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes close {
+    8% {
+        height: 0;
+    }
+    16% {
+        height: 60px;
+    }
+    24% {
+        height: 0;
+    }
+    32% {
+        height: 60px;
+    }
+    50% {
+        height: 20px;
+    }
+}
+
+.gura {
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    top: 330px;
+    left: 660px;
+    height: 20px;
+    width: 50px;
+    border-radius: 60%;
+    animation-name: wide;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wide {
+    32% {
+        height: 20px;
+    }
+    50% {
+        height: 60px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 2em;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(190,16,16,1) 20%, rgba(122,11,11,1) 40%, rgba(122,11,11,1) 60%, rgba(190,16,16,1) 80%, rgba(255,0,0,1) 100%);
+
+}
